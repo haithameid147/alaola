@@ -5,12 +5,10 @@
 jkjhk
 <input type="submit" id="sub">
 </form> -->
-
-
-copied                
+               
 <!DOCTYPE html> 
 <!-- The doctype declaration tells the browser the version of HTML that the document is written in. -->
-<html lang="en">
+<html lang="ar">
 <!-- The <html> element is the root element of an HTML page, and indicates that the page is written in HTML. -->
 <head>
     <meta charset="UTF-8">
@@ -19,29 +17,36 @@ copied
     <!-- This meta tag tells Internet Explorer to use the latest version of the rendering engine. -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- The viewport meta tag specifies how the website should be scaled on different devices. -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <title>HTML form to Google Sheet</title>
     <!-- The title element defines the title of the document, which is displayed in the browser's title bar. -->
 </head>
  
-<body>
+<body >
     <h1 id="msg"></h1>
     <!-- The <h1> element defines a heading. The id attribute creates a unique identifier for the element. -->
-    <form>
-        <h2>اختر العرض المناسب   </h2>
-<select name="kind_of_card" class="form-select" aria-label="Default select example">
+<div class="container">
+<form>
+        <h2> طلب بطاقة جديدة</h2>
+         <label for="exampleFormControlInput1" class="form-label">اختر العرض المناسب</label>
+  <select name="kind_of_card" class="form-select" aria-label="Default select example">
   <option value="نوي 149 فردية " selected>سنوي 149 فردية  </option>
-  <option value="نوي 399 عائلية  محلية سنتين  ">سنوي 399 عائلية  محلية سنتين  </option>
-  <option value="نوي 299 عائلية  محلية سنة ">سنوي 299 عائلية  محلية سنة  </option>
-</select>
+  <option value="سنوي 399 عائلية  محلية سنتين  ">سنوي 399 عائلية  محلية سنتين  </option>
+  <option value="سنوي 299 عائلية  محلية سنة ">سنوي 299 عائلية  محلية سنة  </option>
+  </select>
 <br>
-<br>
-        <input type="text" name="name" placeholder='Name'><br><br>
+  <label for="exampleFormControlInput1" class="form-label">الاسم</label>
+  <input type="text" class="form-control" name="name" placeholder='Name'><br><br>
         <!-- The <input> element is a form control element that allows the user to input data. -->
-        <input type="text" name="national_number" placeholder='الرقم الوطني'><br><br>
-        <input type="tel" name="phone_number" placeholder='رقم الهاتف'><br><br>
-        <input type="submit" id="sub">
+  <label for="exampleFormControlInput1" class="form-label">الرقم الوطني</label>
+  <input type="text" class="form-control" name="national_number" placeholder='الرقم الوطني'><br><br>
+  <label for="exampleFormControlInput1" class="form-label">رقم الهاتف</label>
+  <input type="tel" class="form-control" name="phone_number" placeholder='رقم الهاتف'><br><br>
+  <input type="submit" value="ارسال" id="sub">
         <!-- The <input type="submit"> element creates a submit button. The id attribute creates a unique identifier for the element. -->
-    </form>
+</form>
+</div>
+
     <script>
         let form = document.querySelector("form");
         // The document.querySelector() method returns the first element that matches a specified CSS selector.
