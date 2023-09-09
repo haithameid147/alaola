@@ -30,7 +30,7 @@ jkjhk
         <h2> طلب بطاقة جديدة</h2>
          <label for="exampleFormControlInput1" class="form-label">اختر العرض المناسب</label>
   <select name="kind_of_card" class="form-select" aria-label="Default select example">
-  <option value="نوي 149 فردية " selected>سنوي 149 فردية  </option>
+  <option value="سنوي 149 فردية " selected>سنوي 149 فردية  </option>
   <option value="سنوي 399 عائلية  محلية سنتين  ">سنوي 399 عائلية  محلية سنتين  </option>
   <option value="سنوي 299 عائلية  محلية سنة ">سنوي 299 عائلية  محلية سنة  </option>
   </select>
@@ -68,6 +68,7 @@ jkjhk
                 // The response is converted to text using the res.text() method.
                 .then(data => {
                     document.querySelector("#msg").innerHTML = data;
+                  location.href = 'https://alaola.net/home/';
                     // The innerHTML property sets or returns the HTML content of an element.
                     // Here, we are setting the content of the <h1> element to the response from the server.
                    // document.querySelector("#sub").value = "Submit"
