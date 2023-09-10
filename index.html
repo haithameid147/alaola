@@ -23,9 +23,26 @@ jkjhk
 </head>
  
 <body >
+
+      <nav class="navbar navbar-light bg-light">
+  <div class="container">
+    <a class="navbar-brand" href="#">
+      <img src="https://alaola.net/images/alaola%20logo.png" alt="" width="30" height="24">
+    </a>
+  </div>
+</nav>
+
+  <br> <br><br>
+                       <h2 class="headline-xs after-preloader-anim text-center">
+                        <span class="anim-text-fill" data-text="ALAOLA.NET™"
+                            style="font-weight: 500;color: red">ALAOLA.NET™</span><br>
+                        <br>
+                    </h2>
+     
+<div style="background-color: white" class="container">
     <h1 id="msg"></h1>
     <!-- The <h1> element defines a heading. The id attribute creates a unique identifier for the element. -->
-<div class="container">
+
 <form>
         <h2> طلب بطاقة جديدة</h2>
          <label for="exampleFormControlInput1" class="form-label">اختر العرض المناسب</label>
@@ -44,13 +61,15 @@ jkjhk
   <input type="tel" class="form-control" name="phone_number" placeholder='رقم الهاتف'><br><br>
   <input type="submit" value="ارسال" id="sub">
   <br>
-   <a href="https://wa.me/966541101012">
+   <a href="https://wa.me/966593355082">
                                     <img src="https://png.pngtree.com/png-vector/20221018/ourmid/pngtree-whatsapp-mobile-software-icon-png-image_6315991.png"
                                         style="width: 30px;">
                                 </a>
+                                <br>
         <!-- The <input type="submit"> element creates a submit button. The id attribute creates a unique identifier for the element. -->
 </form>
 </div>
+<br><br>
 
     <script>
         let form = document.querySelector("form");
@@ -73,7 +92,7 @@ jkjhk
                 // The response is converted to text using the res.text() method.
                 .then(data => {
                     document.querySelector("#msg").innerHTML = data;
-                  location.href = 'https://alaola.net/home/';
+                    location.href = 'https://alaola.net/home/';
                     // The innerHTML property sets or returns the HTML content of an element.
                     // Here, we are setting the content of the <h1> element to the response from the server.
                    // document.querySelector("#sub").value = "Submit"
@@ -81,8 +100,16 @@ jkjhk
                 });
         })
     </script>
+        <style>
+body {
+ background-image: url("https://alaola.net/landing/assets/images/saas/22919-Converted.jpg");
+ background-color: #cccccc;
+}
+
+
+
+</style>
 </body>
  
 </html>
                 
-
